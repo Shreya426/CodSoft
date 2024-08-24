@@ -1,0 +1,481 @@
+/* General Reset */
+body, h1, h2, h3, p, a, form, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg--color: #10101a;
+    --main-color: #e74c3c;
+    --2nd-main-color: #ffffffcc;
+    --text-color: #fff;
+    --big-font: 5rem;
+    --h2-font: 1.9rem;
+    --p-font: 1rem;
+  }
+/* Body and Dark Theme */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ddd;
+    background-color: #111;
+}
+
+/* Navbar Styling */
+nav {
+    background: #222;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .nav-links {
+    color:#fff;
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+.header-img{
+    max-width:100%;
+    mask-image:linear-gradient(to bottom, #000000 50%,transparent 100%);
+    z-index:1;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #e74c3c;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #c0392b;
+}
+main {
+    width: min(1600px, 100%);
+    position:relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* About Section */
+.about {
+    padding: 60px 35px;
+    background: #0b0b13;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+}
+
+/* Services Section */
+
+.services {
+    padding: 60px 20px;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #222;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.4rem;
+  }
+  center {
+    text-align: center;
+  }
+  
+  .center h3 {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+  }
+  
+  .row {
+    background: #0b0b13;
+    padding: 60px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .40s;
+  }
+  
+  .row i{
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .row h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .row p {
+    font-size: 18px;
+    color: var(--2nd-main-color);
+    line-height: 30px;
+  }
+  
+  .row:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+  }
+/* Gallery Section */
+.gallery {
+    padding: 60px 20px;
+    background:#0b0b13;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item img {
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Subscription Section */
+.subscription {
+    padding: 60px 20px;
+    background: #222;
+    text-align: center;
+}
+
+.subscription h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscription input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscription button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscription button:hover {
+    background: #c0392b;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTop:hover {
+    background: #c0392b;
+}
+
+/* Footer Styling */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+margin: 10px 0;
+}
+
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Media Queries for Mobile Responsive Design */
+
+/* General Styles for Mobile Devices */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    nav .logo {
+        font-size: 1.2em;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    nav .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .about, .services, .gallery, .subscription {
+        padding: 40px 20px;
+    }
+
+    .about h2, .services h2, .gallery h2, .subscription h2 {
+        font-size: 1.5em;
+    }
+
+    .about p, .services p {
+        font-size: 1em;
+    }
+
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .services-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .center h3 {
+        font-size: 24px;
+    }
+
+    .row {
+        padding: 40px 20px;
+    }
+
+    .row i {
+        font-size: 2rem;
+    }
+
+    .row h3 {
+        font-size: 1rem;
+    }
+
+    .row p {
+        font-size: 16px;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+    }
+
+    .subscription input[type="email"] {
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices (Phones in Portrait Mode) */
+@media (max-width: 480px) {
+    nav .container {
+        padding: 0 5px;
+    }
+
+    nav .logo {
+        font-size: 1em;
+    }
+
+    nav .nav-links li {
+        margin-bottom: 5px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .about h2, .services h2, .gallery h2, .subscription h2 {
+        font-size: 1.25em;
+    }
+
+    .about p, .services p {
+        font-size: 0.9em;
+    }
+
+    .service {
+        padding: 15px;
+        margin: 5px 0;
+    }
+
+    .services-content {
+        grid-template-columns: 1fr;
+    }
+
+    .center h3 {
+        font-size: 20px;
+    }
+
+    .row {
+        padding: 30px 15px;
+    }
+
+    .row i {
+        font-size: 1.5rem;
+    }
+
+    .row h3 {
+        font-size: 0.875rem;
+    }
+
+    .row p {
+        font-size: 14px;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription input[type="email"] {
+        padding: 8px;
+    }
+}
